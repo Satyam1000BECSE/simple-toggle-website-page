@@ -1,0 +1,247 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #34495e;
+    padding: 1rem 0;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header .nav-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,web') center/cover no-repeat;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Features Section */
+.features {
+    background-color: #ecf0f1;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.features .feature {
+    margin-bottom: 2rem;
+}
+
+.features h3 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+}
+
+.features p {
+    color: #7f8c8d;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.service-box h3 {
+    color: #16a085;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    color: #7f8c8d;
+}
+
+/* About Us Section */
+.about {
+    padding: 2rem 0;
+    background-color: #f7f9fa;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #95a5a6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    header .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header .nav-toggle {
+        display: block;
+        background: none;
+        color: #fff;
+        font-size: 1.5rem;
+        border: none;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 2rem;
+    }
+}
